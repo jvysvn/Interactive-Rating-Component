@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --secondary: hsl(213deg, 20%, 22%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--very-dark-blue);
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  width: 350px;
+  background: var(--dark-blue);
+  border-radius: 1rem;
+}
+
+.card-container {
+  padding: 2rem;
+}
+
+.star {
+  width: max-content;
+  background: var(--secondary);
+  border-radius: 50%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: var(--white);
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: var(--light-grey);
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.rating-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.rating-btn {
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  color: var(--light-grey);
+}
+
+.rating-btn:hover {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.checked {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: var(--orange);
+  border-radius: 2rem;
+  padding: 0.7rem;
+  border: none;
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.thank-you-card {
+  text-align: center;
+}
+
+.result {
+  background-color: var(--secondary);
+  width: max-content;
+  margin: 1rem auto;
+  color: var(--orange);
+  font-size: 14px;
+  border-radius: 2rem;
+  padding: 0.7rem;
+}
+
+input[type='radio'] {
+  display: none;
+}
